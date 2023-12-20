@@ -12,7 +12,7 @@ function App() {
     autoPlay: false,
   });
 
-  const [count, { inc: increment }] = useCounter(0, 108);
+  const [count, { inc: increment }] = useCounter(0, bonnoList.length);
 
   return (
     <>
@@ -39,6 +39,9 @@ function App() {
               increment();
             }}
             disabled={count >= 108 || state.playing}
+            className={css({
+              cursor: state.playing ? "wait" : "pointer",
+            })}
           >
             <img
               src={joyanokane}

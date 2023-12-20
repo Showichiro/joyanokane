@@ -40,7 +40,7 @@ export default defineConfig({
       },
       tokens: {
         animations: {
-          purupuru: { value: "purupuru 6s infinite" },
+          purupuru: { value: "purupuru 5.5s infinite" },
         },
       },
     },
